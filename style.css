@@ -1,0 +1,57 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.friends {
+    display: grid;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    'green pippo red yellow'
+    'pink purple black orange';
+}
+
+.friend-card {
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    background-size: 100%;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.friend-card-blue {
+    grid-area: pippo;
+    background-image: url('./images/rainbow-blue.png');
+}
+
+.friend-card-red {
+    grid-area: red;
+    background-image: url('./images/rainbow-blue.png');
+}
+
+.friend-card-yellow {
+    grid-area: yellow;
+    background-image: url('./images/rainbow-blue.png');
+}
+
+.friend-card-green {
+    grid-area: green;
+    background-image: url('./images/rainbow-blue.png');
+}
+
+.friend-card-pink {
+    grid-area: pink;
+    background-image: url('./images/rainbow-blue.png');
+}
